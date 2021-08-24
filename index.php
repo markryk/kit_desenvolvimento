@@ -35,14 +35,14 @@
 							</div>
 						</div>
 						<br>
-						<!--<div class="row">
+						<div class="row">
 							<div class="col">
+								<a href="funcoes_data_e_hora/index.php" class="btn btn-dark color"> Manipular data e hora </a>&nbsp;
+							</div>
+							<!--<div class="col">
 								<a href="#" class="btn btn-dark color"> Calculadora (em breve) </a>&nbsp;
-							</div>
-							<div class="col">
-								
-							</div>
-						</div>-->
+							</div>-->
+						</div>
 					</div>
 				<a href="https://github.com/markryk" class="MarkRyk" target="_blank"> MarkRyk </a>				
 			</div>
