@@ -13,7 +13,7 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-9">
 				<div class="jumbotron" style="background-color: #5282C4;">
-					<h1 class="display-4"> Kit desenvolvimento </h1>					
+					<h1 class="display-4"> Kit desenvolvimento </h1>
 					<p class="lead"> Ferramentas básicas para desenvolver sistemas </p>
 					<hr class="my-4"><br>
 					<div class="container">
@@ -54,6 +54,9 @@
 						</div>
 						<br>
 						<div class="row">
+							<div class="col">
+								<a href="op_math/index.php" class="btn btn-dark color"> Operações matemáticas </a>&nbsp;
+							</div>
 							<!--<div class="col">
 								<a href="#" class="btn btn-dark color"> Calculadora (em breve) </a>&nbsp;
 							</div>-->
