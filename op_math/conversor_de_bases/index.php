@@ -23,12 +23,6 @@
 					<form action="#" method="POST">
 						<div class="form-row">
 							<div class="col">
-								<!--<label for="state"> Tipo de conversor </label>
-								<select id="state" class="custom-select">-->
-									<!--<option selected> Indiferente </option>-->
-									<!--<option value="2"> AC </option>
-									<option value="4"> AL </option>
-								</select>-->
 								<p> Entrada </p>
 								<input type="radio" name="entrada" value="dec" id="ent_decimal" checked>
 								<label for="ent_decimal"> Decimal </label>
@@ -73,10 +67,20 @@
 
 					<?php
 						include_once "conversor.php";
-						include_once 'complete_conversor.php';
+						//include_once 'complete_conversor.php';
 						if (isset($_POST['entrada']) || isset($_POST['saida']) || isset($_POST['numero']) || !empty($_POST['numero'])) {
 							echo converter($_POST['entrada'], $_POST['saida'], $_POST['numero']);
+					?>
+							<form action="#" method="POST">
+								<input type="hidden" name="ent" value="<?=$_POST['entrada']?>">
+								<input type="hidden" name="sda" value="<?=$_POST['saida']?>">
+								<input type="hidden" name="num" value="<?=$_POST['numero']?>">
+								<button class="btn btn-outline-dark btn-lg" name="details"> Detalhes </button>
+								<br><br>
+							</form>
+					<?php
 						}
+						if (isset($_POST['details'])) converter($_POST['ent'], $_POST['sda'], $_POST['num']);
 					?>
 					<br>
 					<a href="../"><button class="btn btn-dark btn-lg color"> Voltar </button></a>
